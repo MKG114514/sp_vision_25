@@ -587,12 +587,11 @@ CMakeFiles/mt_auto_aim_debug.dir/src/mt_auto_aim_debug.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/condition_variable /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/serial.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/v8stdint.h \
- /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
- /usr/include/c++/11/condition_variable \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_aim/aimer.hpp \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Geometry \
  /usr/include/eigen3/Eigen/Eigenvalues \
@@ -695,6 +694,7 @@ CMakeFiles/mt_auto_aim_debug.dir/src/mt_auto_aim_debug.cpp.o: \
  /usr/include/spdlog/version.h \
  /usr/include/spdlog/details/synchronous_factory.h \
  /usr/include/spdlog/spdlog-inl.h \
+ /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_aim/target.hpp \
  /usr/include/c++/11/optional \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_aim/armor.hpp \

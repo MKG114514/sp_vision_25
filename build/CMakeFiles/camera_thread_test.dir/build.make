@@ -204,7 +204,7 @@ camera_thread_test: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 camera_thread_test: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 camera_thread_test: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
 camera_thread_test: io/serial/libserial.a
-camera_thread_test: /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/lib/intel64/libopenvino.so.2025.3.0
+camera_thread_test: /usr/lib/libopenvino.so.2024.2.0
 camera_thread_test: tasks/auto_aim/planner/tinympc/libtinympcstatic.a
 camera_thread_test: CMakeFiles/camera_thread_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/sentry-aim/Desktop/sp_vision_25(zzz)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable camera_thread_test"

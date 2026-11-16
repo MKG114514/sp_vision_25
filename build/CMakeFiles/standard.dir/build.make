@@ -218,7 +218,7 @@ standard: io/libio.a
 standard: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
 standard: io/serial/libserial.a
 standard: tasks/auto_aim/planner/tinympc/libtinympcstatic.a
-standard: /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/lib/intel64/libopenvino.so.2025.3.0
+standard: /usr/lib/libopenvino.so.2024.2.0
 standard: /usr/lib/libceres.so.2.0.0
 standard: /usr/lib/x86_64-linux-gnu/libglog.so.0.4.0
 standard: /usr/lib/x86_64-linux-gnu/libunwind.so

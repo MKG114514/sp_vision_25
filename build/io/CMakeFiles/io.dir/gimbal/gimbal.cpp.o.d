@@ -392,22 +392,20 @@ io/CMakeFiles/io.dir/gimbal/gimbal.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/c++/11/mutex /usr/include/c++/11/bits/std_mutex.h \
- /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/unique_ptr.h \
- /usr/include/c++/11/bits/this_thread_sleep.h \
- /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/serial.h \
- /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/v8stdint.h \
- /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
  /usr/include/c++/11/condition_variable \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/ext/concurrence.h /usr/include/c++/11/iostream \
- /usr/include/c++/11/queue /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/ext/concurrence.h /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
- /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/c++/11/mutex /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/serial.h \
+ /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/v8stdint.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/crc.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/logger.hpp \
  /usr/include/spdlog/spdlog.h /usr/include/spdlog/common.h \

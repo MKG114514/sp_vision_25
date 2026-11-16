@@ -805,54 +805,15 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
   /usr/include/opencv4/opencv2/video.hpp \
   /usr/include/opencv4/opencv2/video/tracking.hpp \
   /usr/include/opencv4/opencv2/video/background_segm.hpp \
-  ../io/cboard.hpp \
-  ../io/command.hpp \
-  ../io/socketcan.hpp \
-  /usr/include/linux/can.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/linux/socket.h \
-  /usr/include/net/if.h \
-  /usr/include/x86_64-linux-gnu/sys/socket.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
-  /usr/include/x86_64-linux-gnu/bits/socket.h \
-  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
-  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
-  /usr/include/x86_64-linux-gnu/asm/socket.h \
-  /usr/include/asm-generic/socket.h \
-  /usr/include/x86_64-linux-gnu/asm/sockios.h \
-  /usr/include/asm-generic/sockios.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
-  /usr/include/x86_64-linux-gnu/bits/socket2.h \
-  /usr/include/x86_64-linux-gnu/sys/epoll.h \
-  /usr/include/x86_64-linux-gnu/bits/epoll.h \
-  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
-  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
-  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
+  ../io/gimbal/gimbal.hpp \
+  /usr/include/c++/11/condition_variable \
+  ../io/serial/include/serial/serial.h \
+  ../io/serial/include/serial/v8stdint.h \
+  ../tasks/auto_aim/solver.hpp \
+  ../tasks/auto_aim/armor.hpp \
+  ../tasks/auto_aim/yolo.hpp \
+  ../tools/exiter.hpp \
+  ../tools/img_tools.hpp \
   ../tools/logger.hpp \
   /usr/include/spdlog/spdlog.h \
   /usr/include/spdlog/common.h \
@@ -865,7 +826,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
   /usr/include/spdlog/details/registry.h \
   /usr/include/spdlog/details/registry-inl.h \
   /usr/include/spdlog/details/periodic_worker.h \
-  /usr/include/c++/11/condition_variable \
   /usr/include/spdlog/details/periodic_worker-inl.h \
   /usr/include/spdlog/logger.h \
   /usr/include/spdlog/details/log_msg.h \
@@ -877,14 +837,35 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/x86_64-linux-gnu/bits/statx.h \
   /usr/include/linux/stat.h \
+  /usr/include/linux/types.h \
+  /usr/include/x86_64-linux-gnu/asm/types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
   /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
   /usr/include/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/linux/falloc.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
@@ -907,14 +888,8 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
   /usr/include/spdlog/version.h \
   /usr/include/spdlog/details/synchronous_factory.h \
   /usr/include/spdlog/spdlog-inl.h \
-  ../tools/thread_safe_queue.hpp \
-  ../tasks/auto_aim/solver.hpp \
-  ../tasks/auto_aim/armor.hpp \
-  ../tools/exiter.hpp \
-  ../tools/img_tools.hpp
+  ../tools/math_tools.hpp
 
-
-../tasks/auto_aim/solver.hpp:
 
 /usr/include/spdlog/details/synchronous_factory.h:
 
@@ -934,32 +909,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
-/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
-
-/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx.h:
-
-/usr/include/spdlog/details/log_msg.h:
-
-/usr/include/spdlog/logger.h:
-
-/usr/include/spdlog/details/periodic_worker-inl.h:
-
-/usr/include/c++/11/condition_variable:
-
-/usr/include/spdlog/common-inl.h:
-
-/usr/include/spdlog/details/null_mutex.h:
-
-/usr/include/spdlog/tweakme.h:
-
-/usr/include/spdlog/common.h:
-
-/usr/include/spdlog/spdlog.h:
-
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
@@ -970,23 +919,13 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/unistd.h:
 
-/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
-
-/usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
-
-/usr/include/x86_64-linux-gnu/asm/ioctl.h:
-
-/usr/include/linux/ioctl.h:
-
-/usr/include/x86_64-linux-gnu/asm/ioctls.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket2.h:
+/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
-/usr/include/x86_64-linux-gnu/sys/socket.h:
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
-/usr/include/x86_64-linux-gnu/sys/ioctl.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
 /usr/include/asm-generic/posix_types.h:
 
@@ -1002,13 +941,33 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/linux/types.h:
 
-/usr/include/linux/can.h:
+/usr/include/x86_64-linux-gnu/bits/statx.h:
 
-../io/socketcan.hpp:
+/usr/include/spdlog/details/log_msg.h:
 
-../io/command.hpp:
+/usr/include/spdlog/logger.h:
 
-../io/cboard.hpp:
+/usr/include/spdlog/details/periodic_worker-inl.h:
+
+/usr/include/spdlog/common-inl.h:
+
+/usr/include/spdlog/details/null_mutex.h:
+
+/usr/include/spdlog/tweakme.h:
+
+/usr/include/spdlog/common.h:
+
+/usr/include/spdlog/spdlog.h:
+
+../io/serial/include/serial/v8stdint.h:
+
+../tasks/auto_aim/solver.hpp:
+
+../io/serial/include/serial/serial.h:
+
+/usr/include/c++/11/condition_variable:
+
+../io/gimbal/gimbal.hpp:
 
 /usr/include/opencv4/opencv2/video/background_segm.hpp:
 
@@ -1230,8 +1189,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
-/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
-
 /usr/include/opencv4/opencv2/core/version.hpp:
 
 /usr/include/opencv4/opencv2/core.hpp:
@@ -1249,8 +1206,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/nlohmann/detail/iterators/primitive_iterator.hpp:
 
 /usr/include/nlohmann/detail/iterators/internal_iterator.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/epoll.h:
 
 /usr/include/nlohmann/detail/input/parser.hpp:
 
@@ -1275,8 +1230,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
-
-../tools/thread_safe_queue.hpp:
 
 /usr/include/c++/11/locale:
 
@@ -1361,6 +1314,8 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
+
+../tasks/auto_aim/yolo.hpp:
 
 /usr/include/limits.h:
 
@@ -1528,8 +1483,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/c++/11/ext/aligned_buffer.h:
 
-/usr/include/asm-generic/socket.h:
-
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
@@ -1652,8 +1605,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
-/usr/include/x86_64-linux-gnu/bits/socket.h:
-
 /usr/include/eigen3/unsupported/Eigen/CXX11/src/util/EmulateArray.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
@@ -1675,8 +1626,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
 /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/usr/include/x86_64-linux-gnu/bits/ioctls.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
@@ -1760,8 +1709,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
-/usr/include/x86_64-linux-gnu/bits/socket_type.h:
-
 /usr/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsBFloat16.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
@@ -1783,8 +1730,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
 
 /usr/include/nlohmann/detail/input/position_t.hpp:
-
-/usr/include/net/if.h:
 
 /usr/include/c++/11/tuple:
 
@@ -1842,8 +1787,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
-
 /usr/include/c++/11/bits/predefined_ops.h:
 
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
@@ -1865,8 +1808,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/linux/socket.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
@@ -1894,8 +1835,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/c++/11/bits/concept_check.h:
 
-/usr/include/asm-generic/sockios.h:
-
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsHalf.h:
@@ -1913,8 +1852,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/fmt/format.h:
-
-/usr/include/x86_64-linux-gnu/asm/socket.h:
 
 /usr/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionThreadPool.h:
 
@@ -2136,6 +2073,8 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 
 /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
+../tools/math_tools.hpp:
+
 /usr/include/nlohmann/detail/macro_unscope.hpp:
 
 /usr/include/eigen3/Eigen/Geometry:
@@ -2149,8 +2088,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/nlohmann/detail/meta/cpp_future.hpp:
 
 /usr/include/spdlog/details/log_msg-inl.h:
-
-/usr/include/asm-generic/ioctls.h:
 
 /usr/include/yaml-cpp/mark.h:
 
@@ -2175,8 +2112,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
-
-/usr/include/asm-generic/ioctl.h:
 
 /usr/include/nlohmann/thirdparty/hedley/hedley.hpp:
 
@@ -2247,8 +2182,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
-
-/usr/include/x86_64-linux-gnu/sys/epoll.h:
 
 /usr/include/eigen3/Eigen/Dense:
 
@@ -2509,8 +2442,6 @@ CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o: ../tests/handeye_test.cpp 
 /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
 
 /usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
-
-/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/c++/11/numeric:
 

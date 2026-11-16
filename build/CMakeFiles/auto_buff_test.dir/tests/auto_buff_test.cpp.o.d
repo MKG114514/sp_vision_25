@@ -975,7 +975,6 @@ CMakeFiles/auto_buff_test.dir/tests/auto_buff_test.cpp.o: \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/gimbal/gimbal.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/serial.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/v8stdint.h \
- /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_buff/buff_detector.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_buff/buff_solver.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_buff/buff_target.hpp \

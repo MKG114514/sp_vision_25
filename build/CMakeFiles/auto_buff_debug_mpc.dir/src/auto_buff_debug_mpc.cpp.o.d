@@ -528,12 +528,11 @@ CMakeFiles/auto_buff_debug_mpc.dir/src/auto_buff_debug_mpc.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/condition_variable /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/serial.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/v8stdint.h \
- /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
- /usr/include/c++/11/condition_variable \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_buff/buff_aimer.hpp \
  /usr/include/yaml-cpp/yaml.h /usr/include/yaml-cpp/parser.h \
  /usr/include/yaml-cpp/dll.h /usr/include/yaml-cpp/emitter.h \
@@ -981,4 +980,5 @@ CMakeFiles/auto_buff_debug_mpc.dir/src/auto_buff_debug_mpc.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
+ /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/trajectory.hpp

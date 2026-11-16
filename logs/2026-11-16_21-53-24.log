@@ -1,0 +1,12 @@
+[2026-11-16 21:53:24.276] [info] 默认标定板尺寸为10列7行
+[2026-11-16 21:53:24.277] [info] [Gimbal] read_thread started.
+[2026-11-16 21:53:24.289] [warning] [Gimbal] Too many errors, attempting to reconnect...
+[2026-11-16 21:53:24.289] [warning] [Gimbal] Reconnecting serial, attempt 1/10...
+[2026-11-16 21:53:25.290] [info] [Gimbal] Reconnected serial successfully.
+[2026-11-16 21:53:25.300] [debug] [Gimbal] CRC16 check failed.
+[2026-11-16 21:53:25.301] [debug] [Gimbal] CRC16 check failed.
+[2026-11-16 21:53:25.301] [info] [Gimbal] First q received.
+[2026-11-16 21:53:25.301] [debug] [Gimbal] CRC16 check failed.
+[2026-11-16 21:53:25.301] [debug] [Gimbal] CRC16 check failed.
+[2026-11-16 21:53:25.301] [info] HikRobot's daemon thread started.
+[2026-11-16 21:53:26.046] [info] HikRobot's capture thread started.

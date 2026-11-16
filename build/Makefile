@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = "/home/sentry-aim/Desktop/sp_vision_25(zzz)/build"
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -567,32 +557,6 @@ io: cmake_check_build_system
 io/fast:
 	$(MAKE) $(MAKESILENT) -f io/CMakeFiles/io.dir/build.make io/CMakeFiles/io.dir/build
 .PHONY : io/fast
-
-#=============================================================================
-# Target rules for targets named uninstall
-
-# Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
-.PHONY : uninstall
-
-# fast build rule for target.
-uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f io/CMakeFiles/uninstall.dir/build.make io/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
-
-#=============================================================================
-# Target rules for targets named sp_vision_uninstall
-
-# Build rule for target.
-sp_vision_uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sp_vision_uninstall
-.PHONY : sp_vision_uninstall
-
-# fast build rule for target.
-sp_vision_uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f io/CMakeFiles/sp_vision_uninstall.dir/build.make io/CMakeFiles/sp_vision_uninstall.dir/build
-.PHONY : sp_vision_uninstall/fast
 
 #=============================================================================
 # Target rules for targets named serial
@@ -1435,9 +1399,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... sp_vision_uninstall"
-	@echo "... uninstall"
 	@echo "... auto_aim"
 	@echo "... auto_aim_debug_mpc"
 	@echo "... auto_aim_test"

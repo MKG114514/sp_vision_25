@@ -687,10 +687,9 @@ CMakeFiles/planner_test.dir/tests/planner_test.cpp.o: \
  /usr/include/c++/11/bits/this_thread_sleep.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/gimbal/gimbal.hpp \
  /usr/include/eigen3/Eigen/Geometry \
+ /usr/include/c++/11/condition_variable \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/serial.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/v8stdint.h \
- /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
- /usr/include/c++/11/condition_variable \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/exiter.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/logger.hpp \
  /usr/include/spdlog/spdlog.h /usr/include/spdlog/common.h \

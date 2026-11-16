@@ -1,0 +1,6 @@
+[2026-11-16 21:56:38.331] [info] 默认标定板尺寸为10列7行
+[2026-11-16 21:56:38.332] [info] [Gimbal] read_thread started.
+[2026-11-16 21:56:38.342] [info] [Gimbal] First q received.
+[2026-11-16 21:56:38.342] [debug] [Gimbal] CRC16 check failed.
+[2026-11-16 21:56:38.342] [info] HikRobot's daemon thread started.
+[2026-11-16 21:56:39.982] [info] HikRobot's capture thread started.

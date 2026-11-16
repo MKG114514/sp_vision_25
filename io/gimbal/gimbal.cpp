@@ -32,13 +32,17 @@ Gimbal::Gimbal(const std::string & config_path)
 
   thread_ = std::thread(&Gimbal::read_thread, this);
 
-  queue_.pop();
+  {
+    std::unique_lock<std::mutex> lock(q_mutex_);
+    q_cv_.wait(lock, [this] { return !q_buffer_.empty() || quit_; });
+  }
   tools::logger()->info("[Gimbal] First q received.");
 }
 
 Gimbal::~Gimbal()
 {
   quit_ = true;
+  q_cv_.notify_all();
   if (thread_.joinable()) thread_.join();
   serial_.close();
 }
@@ -73,19 +77,45 @@ std::string Gimbal::str(GimbalMode mode) const
 
 Eigen::Quaterniond Gimbal::q(std::chrono::steady_clock::time_point t)
 {
-  while (true) {
-    auto [q_a, t_a] = queue_.pop();
-    auto [q_b, t_b] = queue_.front();
-    if (t <= t_a) return q_a;
-    if (!(t_a < t && t <= t_b)) continue;
+  std::unique_lock<std::mutex> lock(q_mutex_);
+  while (!quit_) {
+    q_cv_.wait(lock, [this] { return !q_buffer_.empty() || quit_; });
+    if (quit_) break;
+
+    const auto & [q_a, t_a] = q_buffer_.front();
+    if (t <= t_a) {
+      tools::logger()->warn(
+        "[Gimbal::q] t <= t_a (diff: {:.3f} ms, buf: {})", tools::delta_time(t_a, t) * 1e3,
+        q_buffer_.size());
+      return q_a;
+    }
+
+    if (q_buffer_.size() < 2) {
+      q_cv_.wait(lock, [this] { return q_buffer_.size() >= 2 || quit_; });
+      continue;
+    }
+
+    const auto & [q_b, t_b] = q_buffer_[1];
+    if (t > t_b) {
+      q_buffer_.pop_front();
+      continue;
+    }
 
     auto t_ab = tools::delta_time(t_b, t_a);
-    if (t_ab <= 1e-6) return q_b;
+    if (t_ab <= 1e-6) {
+      tools::logger()->warn("[Gimbal::q] t_ab too small: {:.6f} s", t_ab);
+      return q_b;
+    }
 
     auto t_ac = tools::delta_time(t, t_a);
     auto k = std::clamp(t_ac / t_ab, 0.0, 1.0);
+    //插值是否正常
+    // tools::logger()->debug(
+    //   "[Gimbal::q] slerp k: {:.3f} (t_ac: {:.3f} ms, t_ab: {:.3f} ms, buf: {})", k, t_ac * 1e3,
+    //   t_ab * 1e3, q_buffer_.size());
     return q_a.slerp(k, q_b).normalized();
   }
+  return Eigen::Quaterniond::Identity();
 }
 
 void Gimbal::send(io::VisionToGimbal VisionToGimbal)
@@ -212,7 +242,14 @@ void Gimbal::read_thread()
     Eigen::Quaterniond qpitch(Eigen::AngleAxisd(-pitch, Eigen::Vector3d::UnitY()));
     Eigen::Quaterniond q = qyaw * qpitch;
     // Eigen::Quaterniond q(rx_data_.q[3], rx_data_.q[0], rx_data_.q[1], rx_data_.q[2]);
-    queue_.push({q, t});
+    {
+      std::lock_guard<std::mutex> lock(q_mutex_);
+      if (q_buffer_.size() >= 1000) {
+        q_buffer_.pop_front();
+      }
+      q_buffer_.push_back({q, t});
+    }
+    q_cv_.notify_all();
 
     std::lock_guard<std::mutex> lock(mutex_);
 
@@ -259,7 +296,11 @@ void Gimbal::reconnect()
 
     try {
       serial_.open();  // 尝试重新打开
-      queue_.clear();
+      {
+        std::lock_guard<std::mutex> lock(q_mutex_);
+        q_buffer_.clear();
+      }
+      q_cv_.notify_all();
       tools::logger()->info("[Gimbal] Reconnected serial successfully.");
       break;
     } catch (const std::exception & e) {

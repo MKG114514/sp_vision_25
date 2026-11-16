@@ -205,7 +205,7 @@ auto_aim_test: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 auto_aim_test: io/libio.a
 auto_aim_test: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
 auto_aim_test: io/serial/libserial.a
-auto_aim_test: /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/lib/intel64/libopenvino.so.2025.3.0
+auto_aim_test: /usr/lib/libopenvino.so.2024.2.0
 auto_aim_test: tasks/auto_aim/planner/tinympc/libtinympcstatic.a
 auto_aim_test: CMakeFiles/auto_aim_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/sentry-aim/Desktop/sp_vision_25(zzz)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable auto_aim_test"

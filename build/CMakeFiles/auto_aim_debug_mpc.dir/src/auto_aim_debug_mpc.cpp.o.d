@@ -588,10 +588,9 @@ CMakeFiles/auto_aim_debug_mpc.dir/src/auto_aim_debug_mpc.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+ /usr/include/c++/11/condition_variable \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/serial.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/v8stdint.h \
- /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
- /usr/include/c++/11/condition_variable \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_aim/planner/planner.hpp \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Geometry \
  /usr/include/eigen3/Eigen/Eigenvalues \
@@ -790,6 +789,7 @@ CMakeFiles/auto_aim_debug_mpc.dir/src/auto_aim_debug_mpc.cpp.o: \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_aim/armor.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/command.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/usbcamera/usbcamera.hpp \
+ /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_aim/yolo.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_pool.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/logger.hpp \

@@ -355,103 +355,93 @@ tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov5.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/openvino.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_adapter.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/any.hpp \
- /usr/include/c++/11/typeindex \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/attribute_visitor.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/core_visibility.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/visibility.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/except.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/deprecated.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/runtime_attribute.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_vector.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rtti.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_names.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_set.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/axis_vector.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/shape.hpp \
- /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/openvino/openvino.hpp /usr/include/openvino/core/core.hpp \
+ /usr/include/openvino/core/attribute_adapter.hpp \
+ /usr/include/openvino/core/any.hpp /usr/include/c++/11/typeindex \
+ /usr/include/openvino/core/attribute_visitor.hpp \
+ /usr/include/openvino/core/type.hpp \
+ /usr/include/openvino/core/core_visibility.hpp \
+ /usr/include/openvino/core/visibility.hpp \
+ /usr/include/openvino/core/except.hpp \
+ /usr/include/openvino/core/deprecated.hpp \
+ /usr/include/openvino/core/runtime_attribute.hpp \
+ /usr/include/openvino/core/node_vector.hpp \
+ /usr/include/openvino/core/rtti.hpp \
+ /usr/include/openvino/core/enum_names.hpp \
+ /usr/include/openvino/core/axis_set.hpp \
+ /usr/include/openvino/core/axis_vector.hpp \
+ /usr/include/openvino/core/coordinate.hpp \
+ /usr/include/openvino/core/shape.hpp /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/strides.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/coordinate_diff.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/dimension.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/interval.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/symbol.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/enum_mask.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/graph_util.hpp \
- /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
- /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/codecvt \
- /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /usr/include/c++/11/stack /usr/include/c++/11/bits/stl_stack.h \
- /usr/include/c++/11/unordered_set \
+ /usr/include/openvino/core/strides.hpp \
+ /usr/include/openvino/core/coordinate_diff.hpp \
+ /usr/include/openvino/core/dimension.hpp \
+ /usr/include/openvino/core/interval.hpp \
+ /usr/include/openvino/core/symbol.hpp \
+ /usr/include/openvino/core/enum_mask.hpp \
+ /usr/include/openvino/core/graph_util.hpp /usr/include/c++/11/stack \
+ /usr/include/c++/11/bits/stl_stack.h /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/model.hpp \
- /usr/include/c++/11/atomic \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/input.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/tensor.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/partial_shape.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rank.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/attr_types.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/bfloat16.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float16.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float4_e2m1.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e4m3.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e5m2.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/float8_e8m0.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/tensor.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/allocator.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/descriptor/output.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_output.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/node_input.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_value.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/assign.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/assign_base.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/sink.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/op.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/variable_extension.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/parameter.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/layout.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/read_value.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/util/read_value_base.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/op/result.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/serialize.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/opsets/opset.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/pass/pass_config.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/rt_info.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/version.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/color_format.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_info.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_model_info.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/input_tensor_info.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/preprocess_steps.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/padding_mode.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/resize_algorithm.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_info.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_model_info.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/output_tensor_info.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/postprocess_steps.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/preprocess/pre_post_process.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/type/element_type_traits.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/runtime.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/core.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/extension.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/core/op_extension.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/common.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/compiled_model.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/infer_request.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/profiling_info.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/variable_state.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/properties.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_context.hpp \
- /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/include/openvino/runtime/remote_tensor.hpp \
+ /usr/include/openvino/core/model.hpp /usr/include/c++/11/atomic \
+ /usr/include/openvino/core/node.hpp \
+ /usr/include/openvino/core/descriptor/input.hpp \
+ /usr/include/openvino/core/descriptor/tensor.hpp \
+ /usr/include/openvino/core/partial_shape.hpp \
+ /usr/include/openvino/core/rank.hpp \
+ /usr/include/openvino/op/util/attr_types.hpp \
+ /usr/include/openvino/core/type/element_type.hpp \
+ /usr/include/openvino/core/type/bfloat16.hpp \
+ /usr/include/openvino/core/type/float16.hpp \
+ /usr/include/openvino/core/type/float8_e4m3.hpp \
+ /usr/include/openvino/core/type/float8_e5m2.hpp \
+ /usr/include/openvino/runtime/tensor.hpp \
+ /usr/include/openvino/runtime/allocator.hpp \
+ /usr/include/openvino/core/descriptor/output.hpp \
+ /usr/include/openvino/core/node_output.hpp \
+ /usr/include/openvino/core/node_input.hpp \
+ /usr/include/openvino/op/util/variable.hpp \
+ /usr/include/openvino/op/util/variable_value.hpp \
+ /usr/include/openvino/op/assign.hpp \
+ /usr/include/openvino/op/util/assign_base.hpp \
+ /usr/include/openvino/op/sink.hpp /usr/include/openvino/op/op.hpp \
+ /usr/include/openvino/op/util/variable_extension.hpp \
+ /usr/include/openvino/op/parameter.hpp \
+ /usr/include/openvino/core/layout.hpp \
+ /usr/include/openvino/op/read_value.hpp \
+ /usr/include/openvino/op/util/read_value_base.hpp \
+ /usr/include/openvino/op/result.hpp \
+ /usr/include/openvino/pass/serialize.hpp \
+ /usr/include/openvino/opsets/opset.hpp \
+ /usr/include/openvino/pass/pass.hpp \
+ /usr/include/openvino/pass/pass_config.hpp \
+ /usr/include/openvino/core/rt_info.hpp \
+ /usr/include/openvino/core/version.hpp \
+ /usr/include/openvino/core/preprocess/color_format.hpp \
+ /usr/include/openvino/core/preprocess/input_info.hpp \
+ /usr/include/openvino/core/preprocess/input_model_info.hpp \
+ /usr/include/openvino/core/preprocess/input_tensor_info.hpp \
+ /usr/include/openvino/core/preprocess/preprocess_steps.hpp \
+ /usr/include/openvino/core/preprocess/padding_mode.hpp \
+ /usr/include/openvino/core/preprocess/resize_algorithm.hpp \
+ /usr/include/openvino/core/preprocess/output_info.hpp \
+ /usr/include/openvino/core/preprocess/output_model_info.hpp \
+ /usr/include/openvino/core/preprocess/output_tensor_info.hpp \
+ /usr/include/openvino/core/preprocess/postprocess_steps.hpp \
+ /usr/include/openvino/core/preprocess/pre_post_process.hpp \
+ /usr/include/openvino/core/type/element_type_traits.hpp \
+ /usr/include/openvino/runtime/runtime.hpp \
+ /usr/include/openvino/runtime/core.hpp \
+ /usr/include/openvino/core/extension.hpp \
+ /usr/include/openvino/core/op_extension.hpp \
+ /usr/include/openvino/runtime/common.hpp \
+ /usr/include/openvino/runtime/compiled_model.hpp \
+ /usr/include/openvino/runtime/infer_request.hpp \
+ /usr/include/openvino/runtime/profiling_info.hpp \
+ /usr/include/openvino/runtime/variable_state.hpp \
+ /usr/include/openvino/runtime/properties.hpp \
+ /usr/include/openvino/runtime/remote_context.hpp \
+ /usr/include/openvino/runtime/remote_tensor.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tasks/auto_aim/armor.hpp \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -668,6 +658,9 @@ tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov5.cpp.o: \
  /usr/include/yaml-cpp/node/convert.h \
  /usr/include/yaml-cpp/node/detail/impl.h \
  /usr/include/yaml-cpp/node/parse.h /usr/include/yaml-cpp/node/emit.h \
+ /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
+ /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/codecvt \
+ /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/img_tools.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/logger.hpp \
  /usr/include/spdlog/spdlog.h /usr/include/spdlog/common.h \

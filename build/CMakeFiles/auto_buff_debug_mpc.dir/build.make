@@ -186,7 +186,7 @@ auto_buff_debug_mpc: io/libio.a
 auto_buff_debug_mpc: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
 auto_buff_debug_mpc: io/serial/libserial.a
 auto_buff_debug_mpc: tasks/auto_aim/planner/tinympc/libtinympcstatic.a
-auto_buff_debug_mpc: /home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/lib/intel64/libopenvino.so.2025.3.0
+auto_buff_debug_mpc: /usr/lib/libopenvino.so.2024.2.0
 auto_buff_debug_mpc: /usr/lib/libceres.so.2.0.0
 auto_buff_debug_mpc: /usr/lib/x86_64-linux-gnu/libglog.so.0.4.0
 auto_buff_debug_mpc: /usr/lib/x86_64-linux-gnu/libunwind.so

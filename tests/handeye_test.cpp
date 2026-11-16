@@ -9,18 +9,20 @@
 #include <opencv2/core/eigen.hpp>
 
 #include "io/camera.hpp"
-#include "io/cboard.hpp"
+#include "io/gimbal/gimbal.hpp"
 #include "tasks/auto_aim/solver.hpp"
+#include "tasks/auto_aim/yolo.hpp"
 #include "tools/exiter.hpp"
 #include "tools/img_tools.hpp"
 #include "tools/logger.hpp"
+#include "tools/math_tools.hpp"
 
 const std::string keys =
-  "{help h usage ? |                     | 输出命令行参数说明}"
-  "{config-path c  | configs/handeye.yaml | yaml配置文件路径 }"
-  "{d display      |                     | 显示视频流       }";
+  "{help h usage ? |                      | 输出命令行参数说明}"
+  "{@config-path c | configs/standard3.yaml | yaml配置文件路径 }"
+  "{d display      |                      | 显示视频流       }";
 
-// 世界坐标到像素坐标的转换
+// 世界坐标到像素坐标的转换 & 装甲板到相机/云台距离验证
 
 int main(int argc, char * argv[])
 {
@@ -32,15 +34,22 @@ int main(int argc, char * argv[])
 
   tools::Exiter exiter;
 
-  auto config_path = cli.get<std::string>("config-path");
+  auto config_path = cli.get<std::string>(0);
   auto display = cli.has("display");
   auto yaml = YAML::LoadFile(config_path);
-  auto height = yaml["height"].as<double>();
-  auto grid_num = yaml["grid_num"].as<int>();
-  auto grid_size = yaml["grid_size"].as<double>();
-  auto delay = yaml["delay"].as<int>();
-  io::CBoard cboard(config_path);
+  auto height = yaml["height"] ? yaml["height"].as<double>() : 0.0;
+  auto grid_num = yaml["grid_num"] ? yaml["grid_num"].as<int>() : 0;
+  auto grid_size = yaml["grid_size"] ? yaml["grid_size"].as<double>() : 0.0;
+  auto delay = yaml["delay"] ? yaml["delay"].as<int>() : 1;
+
+  auto R_camera2gimbal_data = yaml["R_camera2gimbal"].as<std::vector<double>>();
+  auto t_camera2gimbal_data = yaml["t_camera2gimbal"].as<std::vector<double>>();
+  Eigen::Matrix<double, 3, 3, Eigen::RowMajor> R_camera2gimbal(R_camera2gimbal_data.data());
+  Eigen::Vector3d t_camera2gimbal(t_camera2gimbal_data.data());
+
+  io::Gimbal gimbal(config_path);
   io::Camera camera(config_path);
+  auto_aim::YOLO yolo(config_path, display);
   auto_aim::Solver solver(config_path);
 
   cv::Mat img;
@@ -55,16 +64,42 @@ int main(int argc, char * argv[])
   }
   while (!exiter.exit()) {
     camera.read(img, t);
-    q = cboard.imu_at(t - 1ms * delay);
+    q = gimbal.q(t - std::chrono::milliseconds(delay));
     solver.set_R_gimbal2world(q);
     cv::Mat result = img.clone();
-    std::vector<cv::Point2f> projectedPoints = solver.world2pixel(points);
-    for (const auto & point : projectedPoints) {
-      if (point.x >= 0 && point.x < result.cols && point.y >= 0 && point.y < result.rows) {
-        cv::circle(result, point, 3, cv::Scalar(255, 255, 255), -1);
+
+    if (!points.empty()) {
+      std::vector<cv::Point2f> projectedPoints = solver.world2pixel(points);
+      for (const auto & point : projectedPoints) {
+        if (point.x >= 0 && point.x < result.cols && point.y >= 0 && point.y < result.rows) {
+          cv::circle(result, point, 3, cv::Scalar(255, 255, 255), -1);
+        }
       }
     }
-    Eigen::Vector3d euler = solver.R_gimbal2world().eulerAngles(2, 1, 0) * 180.0 / M_PI;
+
+    auto armors = yolo.detect(img);
+    for (auto & armor : armors) {
+      solver.solve(armor);
+      Eigen::Vector3d xyz_in_camera =
+        R_camera2gimbal.transpose() * (armor.xyz_in_gimbal - t_camera2gimbal);
+      double cam_dist = xyz_in_camera.norm();
+      double gimbal_dist = armor.xyz_in_gimbal.norm();
+
+      tools::logger()->info(
+        "[handeye_test] cam_dist: {:.3f} m (xyz: {:.3f}, {:.3f}, {:.3f}) | gimbal_dist: {:.3f} m",
+        cam_dist, xyz_in_camera[0], xyz_in_camera[1], xyz_in_camera[2], gimbal_dist);
+
+      if (display) {
+        auto reprojected =
+          solver.reproject_armor(armor.xyz_in_world, armor.ypr_in_world[0], armor.type, armor.name);
+        tools::draw_points(result, reprojected, {0, 255, 0});
+        tools::draw_text(
+          result, fmt::format("cam: {:.3f}m  gimbal: {:.3f}m", cam_dist, gimbal_dist),
+          armor.center, {0, 255, 255});
+      }
+    }
+
+    Eigen::Vector3d euler = tools::eulers(solver.R_gimbal2world(), 2, 1, 0) * 57.3;
     tools::draw_text(result, fmt::format("yaw   {:.2f}", euler[0]), {40, 40}, {0, 0, 255});
     tools::draw_text(result, fmt::format("pitch {:.2f}", euler[1]), {40, 80}, {0, 0, 255});
     tools::draw_text(result, fmt::format("roll  {:.2f}", euler[2]), {40, 120}, {0, 0, 255});

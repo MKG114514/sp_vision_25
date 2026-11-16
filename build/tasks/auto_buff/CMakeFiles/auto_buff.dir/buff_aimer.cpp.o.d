@@ -969,5 +969,4 @@ tasks/auto_buff/CMakeFiles/auto_buff.dir/buff_aimer.cpp.o: \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/gimbal/gimbal.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/serial.h \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/io/serial/include/serial/v8stdint.h \
- /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/thread_safe_queue.hpp \
  /home/sentry-aim/Desktop/sp_vision_25(zzz)/tools/trajectory.hpp

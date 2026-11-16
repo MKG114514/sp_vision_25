@@ -3395,27 +3395,23 @@ tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o: ../tasks/
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
-  /usr/include/c++/11/thread \
-  /usr/include/c++/11/bits/std_thread.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/bits/this_thread_sleep.h \
-  ../io/serial/include/serial/serial.h \
-  ../io/serial/include/serial/v8stdint.h \
-  ../tools/thread_safe_queue.hpp \
-  /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/queue \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/deque.tcc \
-  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  ../io/serial/include/serial/serial.h \
+  ../io/serial/include/serial/v8stdint.h \
   ../tasks/auto_aim/shooter.hpp \
   ../io/command.hpp \
   ../tasks/auto_aim/aimer.hpp \
@@ -3551,6 +3547,10 @@ tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o: ../tasks/
   /usr/include/spdlog/version.h \
   /usr/include/spdlog/details/synchronous_factory.h \
   /usr/include/spdlog/spdlog-inl.h \
+  ../tools/thread_safe_queue.hpp \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/bits/stl_queue.h \
   ../tasks/auto_aim/target.hpp \
   ../tasks/auto_aim/armor.hpp \
   /usr/include/opencv4/opencv2/opencv.hpp \
