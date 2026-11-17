@@ -1,0 +1,14 @@
+[2026-11-17 13:26:32.699] [info] [Gimbal] read_thread started.
+[2026-11-17 13:26:32.700] [warning] [Gimbal] Too many errors, attempting to reconnect...
+[2026-11-17 13:26:32.700] [warning] [Gimbal] Reconnecting serial, attempt 1/10...
+[2026-11-17 13:26:33.700] [info] [Gimbal] Reconnected serial successfully.
+[2026-11-17 13:26:33.712] [info] [Gimbal] First q received.
+[2026-11-17 13:26:33.712] [debug] [Gimbal] CRC16 check failed.
+[2026-11-17 13:26:33.712] [info] HikRobot's daemon thread started.
+[2026-11-17 13:26:34.094] [info] [MultiThreadDetector] initialized !
+[2026-11-17 13:26:34.462] [info] HikRobot's capture thread started.
+[2026-11-17 13:26:34.541] [info] Switch to AUTO_AIM
+[2026-11-17 13:27:04.485] [info] HikRobot's capture thread stopped.
+[2026-11-17 13:27:04.495] [info] HikRobot's daemon thread stopped.
+[2026-11-17 13:27:04.496] [info] HikRobot destructed.
+[2026-11-17 13:27:04.511] [info] [Gimbal] read_thread stopped.

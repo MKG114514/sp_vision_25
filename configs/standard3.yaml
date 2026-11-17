@@ -110,4 +110,4 @@ predict_time: 0.120     # s
 height: 0   # 云台旋转中心到地面的高度（单位：米）
 grid_num: 10     # 网格数量
 grid_size: 0.2   # 每个网格边长（单位：米）
-delay: 1         # 图像与云台数据的时间补偿（ms
+delay: -2         # 图像与云台数据的时间补偿（ms

@@ -19,6 +19,7 @@
 #include "tools/math_tools.hpp"
 #include "tools/plotter.hpp"
 #include "tools/recorder.hpp"
+#include "tools/yaml.hpp"
 
 const std::string keys =
   "{help h usage ? |                        | 输出命令行参数说明}"
@@ -38,6 +39,9 @@ int main(int argc, char * argv[])
   tools::Exiter exiter;
   tools::Plotter plotter;
   tools::Recorder recorder(100);  //根据实际帧率调整
+
+  auto yaml = tools::load(config_path);
+  auto delay = yaml["delay"] ? yaml["delay"].as<int>() : 1;
 
   io::Gimbal gimbal(config_path);
   io::Camera camera(config_path);
@@ -66,7 +70,7 @@ int main(int argc, char * argv[])
     auto t0 = std::chrono::steady_clock::now();
     /// 自瞄核心逻辑
     auto [img, armors, t] = detector.debug_pop();
-    Eigen::Quaterniond q = gimbal.q(t - 1ms);
+    Eigen::Quaterniond q = gimbal.q(t - std::chrono::milliseconds(delay));
     mode = gimbal.mode();
 
     if (last_mode != mode) {

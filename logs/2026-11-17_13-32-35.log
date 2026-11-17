@@ -1,0 +1,18 @@
+[2026-11-17 13:32:35.992] [info] [Gimbal] read_thread started.
+[2026-11-17 13:32:36.003] [debug] [Gimbal] CRC16 check failed.
+[2026-11-17 13:32:36.003] [debug] [Gimbal] CRC16 check failed.
+[2026-11-17 13:32:36.003] [info] [Gimbal] First q received.
+[2026-11-17 13:32:36.003] [debug] [Gimbal] CRC16 check failed.
+[2026-11-17 13:32:36.003] [debug] [Gimbal] CRC16 check failed.
+[2026-11-17 13:32:36.003] [info] HikRobot's daemon thread started.
+[2026-11-17 13:32:36.302] [info] [MultiThreadDetector] initialized !
+[2026-11-17 13:32:36.743] [info] HikRobot's capture thread started.
+[2026-11-17 13:32:36.822] [info] Switch to AUTO_AIM
+[2026-11-17 13:32:41.052] [debug] [Target] r=0.046, l=0.000
+[2026-11-17 13:32:41.052] [debug] [Tracker] Target diverged!
+[2026-11-17 13:32:46.972] [debug] [Target] r=0.050, l=0.000
+[2026-11-17 13:32:46.972] [debug] [Tracker] Target diverged!
+[2026-11-17 13:32:58.167] [info] HikRobot's capture thread stopped.
+[2026-11-17 13:32:58.174] [info] HikRobot's daemon thread stopped.
+[2026-11-17 13:32:58.175] [info] HikRobot destructed.
+[2026-11-17 13:32:58.189] [info] [Gimbal] read_thread stopped.

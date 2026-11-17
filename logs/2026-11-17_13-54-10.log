@@ -1,0 +1,16 @@
+[2026-11-17 13:54:10.648] [info] [Gimbal] read_thread started.
+[2026-11-17 13:54:10.658] [info] [Gimbal] First q received.
+[2026-11-17 13:54:10.659] [info] HikRobot's daemon thread started.
+[2026-11-17 13:54:10.974] [info] [MultiThreadDetector] initialized !
+[2026-11-17 13:54:11.404] [info] HikRobot's capture thread started.
+[2026-11-17 13:54:11.480] [info] Switch to AUTO_AIM
+[2026-11-17 13:54:13.643] [info] Switch to IDLE
+[2026-11-17 13:54:16.833] [info] Switch to AUTO_AIM
+[2026-11-17 13:54:20.265] [info] Switch to IDLE
+[2026-11-17 13:54:23.390] [info] Switch to AUTO_AIM
+[2026-11-17 13:54:27.308] [info] Switch to IDLE
+[2026-11-17 13:54:31.135] [info] Switch to AUTO_AIM
+[2026-11-17 13:54:38.739] [info] HikRobot's capture thread stopped.
+[2026-11-17 13:54:38.749] [info] HikRobot's daemon thread stopped.
+[2026-11-17 13:54:38.749] [info] HikRobot destructed.
+[2026-11-17 13:54:38.754] [info] [Gimbal] read_thread stopped.

@@ -1,0 +1,38 @@
+[2026-11-17 13:57:30.684] [info] [Gimbal] read_thread started.
+[2026-11-17 13:57:30.695] [debug] [Gimbal] CRC16 check failed.
+[2026-11-17 13:57:30.695] [debug] [Gimbal] CRC16 check failed.
+[2026-11-17 13:57:30.695] [debug] [Gimbal] CRC16 check failed.
+[2026-11-17 13:57:30.695] [debug] [Gimbal] CRC16 check failed.
+[2026-11-17 13:57:30.695] [info] [Gimbal] First q received.
+[2026-11-17 13:57:30.696] [info] HikRobot's daemon thread started.
+[2026-11-17 13:57:31.010] [info] [MultiThreadDetector] initialized !
+[2026-11-17 13:57:31.441] [info] HikRobot's capture thread started.
+[2026-11-17 13:57:31.521] [info] Switch to AUTO_AIM
+[2026-11-17 13:57:34.271] [info] Switch to IDLE
+[2026-11-17 13:57:37.462] [info] Switch to AUTO_AIM
+[2026-11-17 13:57:40.913] [info] Switch to IDLE
+[2026-11-17 13:57:44.157] [info] Switch to AUTO_AIM
+[2026-11-17 13:57:45.251] [debug] [Target] r=0.126, l=-0.139
+[2026-11-17 13:57:45.251] [debug] [Tracker] Target diverged!
+[2026-11-17 13:57:45.389] [debug] [Target] r=0.096, l=-0.162
+[2026-11-17 13:57:45.389] [debug] [Tracker] Target diverged!
+[2026-11-17 13:57:49.402] [info] Switch to IDLE
+[2026-11-17 13:57:53.508] [info] Switch to AUTO_AIM
+[2026-11-17 13:57:56.390] [info] Switch to IDLE
+[2026-11-17 13:58:03.684] [info] Switch to AUTO_AIM
+[2026-11-17 13:58:06.546] [info] Switch to IDLE
+[2026-11-17 13:58:12.633] [info] Switch to AUTO_AIM
+[2026-11-17 13:58:16.676] [info] Switch to IDLE
+[2026-11-17 13:58:24.645] [info] Switch to AUTO_AIM
+[2026-11-17 13:58:28.248] [info] Switch to IDLE
+[2026-11-17 13:58:37.228] [info] Switch to AUTO_AIM
+[2026-11-17 13:58:39.518] [debug] [Target] r=0.150, l=-0.180
+[2026-11-17 13:58:39.518] [debug] [Tracker] Target diverged!
+[2026-11-17 13:58:41.153] [info] Switch to IDLE
+[2026-11-17 13:58:46.878] [info] Switch to AUTO_AIM
+[2026-11-17 13:58:50.508] [info] Switch to IDLE
+[2026-11-17 13:58:55.302] [info] Switch to AUTO_AIM
+[2026-11-17 13:59:02.505] [info] HikRobot's capture thread stopped.
+[2026-11-17 13:59:02.512] [info] HikRobot's daemon thread stopped.
+[2026-11-17 13:59:02.513] [info] HikRobot destructed.
+[2026-11-17 13:59:02.522] [info] [Gimbal] read_thread stopped.

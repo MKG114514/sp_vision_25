@@ -266,7 +266,7 @@ OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
 
 //The directory containing a CMake configuration file for OpenVINO.
-OpenVINO_DIR:PATH=/usr/lib/cmake/openvino2024.2.0
+OpenVINO_DIR:PATH=/home/sentry-aim/Downloads/openvino_toolkit_ubuntu22_2025.3.0.19807.44526285f24_x86_64/runtime/cmake
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -287,7 +287,7 @@ TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 _lib:FILEPATH=/opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
-ament_cmake_DIR:PATH=ament_cmake_DIR-NOTFOUND
+ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_core.
 ament_cmake_core_DIR:PATH=/opt/ros/humble/share/ament_cmake_core/cmake
@@ -392,7 +392,7 @@ rcl_logging_spdlog_DIR:PATH=/opt/ros/humble/share/rcl_logging_spdlog/cmake
 rcl_yaml_param_parser_DIR:PATH=/opt/ros/humble/share/rcl_yaml_param_parser/cmake
 
 //The directory containing a CMake configuration file for rclcpp.
-rclcpp_DIR:PATH=rclcpp_DIR-NOTFOUND
+rclcpp_DIR:PATH=/opt/ros/humble/share/rclcpp/cmake
 
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
@@ -446,7 +446,7 @@ rosidl_runtime_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_runtime_cpp/cmake
 rosidl_typesupport_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_cpp.
-rosidl_typesupport_cpp_DIR:PATH=rosidl_typesupport_cpp_DIR-NOTFOUND
+rosidl_typesupport_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_cpp/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_fastrtps_c.
 rosidl_typesupport_fastrtps_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake
@@ -494,7 +494,7 @@ spdlog_vendor_DIR:PATH=/opt/ros/humble/share/spdlog_vendor/cmake
 statistics_msgs_DIR:PATH=/opt/ros/humble/share/statistics_msgs/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
-std_msgs_DIR:PATH=std_msgs_DIR-NOTFOUND
+std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
 
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake

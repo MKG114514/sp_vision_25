@@ -19,6 +19,7 @@
 #include "tools/plotter.hpp"
 #include "tools/recorder.hpp"
 #include "tools/thread_safe_queue.hpp"
+#include "tools/yaml.hpp"
 
 using namespace std::chrono_literals;
 
@@ -38,6 +39,9 @@ int main(int argc, char * argv[])
     cli.printMessage();
     return 0;
   }
+
+  auto yaml = tools::load(config_path);
+  auto delay = yaml["delay"] ? yaml["delay"].as<int>() : 0;
 
   io::Gimbal gimbal(config_path);
   io::Camera camera(config_path);
@@ -120,7 +124,7 @@ int main(int argc, char * argv[])
 
   while (!exiter.exit()) {
     camera.read(img, t);
-    auto q = gimbal.q(t);
+    auto q = gimbal.q(t - std::chrono::milliseconds(delay));
 
     //recorder.record(img, q, t);//zxr
 
